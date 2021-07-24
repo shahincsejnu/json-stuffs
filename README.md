@@ -143,6 +143,15 @@ This repository contains the stuffs related to JSON (or JSON in Golang to be spe
 
 ## JSON in Go
 
+- Go offers built-in support for JSON encoding and decoding, including to and from built-in and custom data types.
+- we can do `Marshal` and `Unmarshal` in Go for parsing JSON from and to struct etc.
+- see the examples of Marshal and Unmarshal
+- JSON Marshal in Go : Struct to JSON string
+- JSON Unmarshal in Go : JSON String to Struct
+
+## JSON metadata tag
+
+- see this [article](https://build.vsupalov.com/go-json-omitempty/)
 
 
 
@@ -150,4 +159,6 @@ This repository contains the stuffs related to JSON (or JSON in Golang to be spe
 
 - [Learn JSON in 10 Minutes](https://www.youtube.com/watch?v=iiADhChRriM)
 - [Working with JSON in Go - Tutorial](https://www.youtube.com/watch?v=Osm5SCw6gPU) 
-
+- [Go by Example: JSON](https://gobyexample.com/json)
+- [Go JSON (Un)Marshalling, Missing Fields and Omitempty, JSON Metadata tag](https://build.vsupalov.com/go-json-omitempty/)
+- [Go JSON doc](https://pkg.go.dev/encoding/json)
