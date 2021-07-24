@@ -1,0 +1,18 @@
+[
+  {
+    "Name" : "Shahin",
+    "Role" : "Software Engineer",
+    "ID" : 7,
+    "Male" : true,
+    "Skills" : ["Docker", "K8s", "Terraform"],
+    "Profiles" : {
+      "LinkedIn" : "okaoka"
+    }
+  },
+
+  {
+    "Name" : "Oka",
+    "Skills" : ["Docker", true, "Terraform"],
+    "ID" : null
+  }
+]
