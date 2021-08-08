@@ -165,6 +165,7 @@ This repository contains the stuffs related to JSON (or JSON in Golang to be spe
 ## JSON metadata tag
 
 - see this [article](https://build.vsupalov.com/go-json-omitempty/)
+- see `json-metadata-tags-examples` folder's examples
 
 
 
