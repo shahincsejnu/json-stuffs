@@ -85,13 +85,26 @@ func main() {
 	// We can also decode JSON into custom data types. This has the advantages of adding additional type-safety to our programs and eliminating the need for type assertions when accessing the decoded data.
 	str := `{"page": 1, "fruits": ["apple", "peach"]}`
 	res := response2{}
-	json.Unmarshal([]byte(str), &res)
+	err := json.Unmarshal([]byte(str), &res)
+	if err != nil {
+		panic(err)
+	}
 	fmt.Println(res)
 	fmt.Println(res.Fruits[0])
 
 	// In the examples above we always used bytes and strings as intermediates between the data and JSON representation on standard out. We can also stream JSON encodings directly to os.Writers like os.Stdout or even HTTP response bodies.
 	enc := json.NewEncoder(os.Stdout)
 	d := map[string]int{"apple": 5, "lettuce": 7}
-	enc.Encode(d)
+	err = enc.Encode(d)
+	if err != nil {
+		panic(err)
+	}
 
+	dec := json.NewDecoder(os.Stdin)
+	res2 := response2{}
+	err = dec.Decode(&res2)
+	if err != nil {
+		panic(err)
+	}
+	fmt.Println(res2)
 }

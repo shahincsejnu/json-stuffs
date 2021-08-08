@@ -36,4 +36,5 @@ func main() {
 
 	fmt.Println(jsn)
 
+	fmt.Println(string(jsn))
 }
