@@ -13,14 +13,14 @@ import (
 )
 
 type Dummy1 struct {
-	Name string
-	Number int64
+	Name    string
+	Number  int64
 	Pointer *string
 }
 
 type Dummy2 struct {
-	Name string `json:"name"`
-	Number int64 `json:"number"`
+	Name    string  `json:"name"`
+	Number  int64   `json:"number"`
 	Pointer *string `json:"pointer"`
 }
 

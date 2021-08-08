@@ -9,8 +9,8 @@ import (
 )
 
 type Dummy7 struct {
-	Name string `json:"name"`
-	Number int64 `json:"number"`
+	Name    string  `json:"name"`
+	Number  int64   `json:"number"`
 	Pointer *string `json:"-"`
 }
 

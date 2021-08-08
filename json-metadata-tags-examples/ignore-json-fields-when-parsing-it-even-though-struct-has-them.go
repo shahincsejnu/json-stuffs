@@ -9,9 +9,9 @@ import (
 )
 
 type Dummy6 struct {
-	Name string `json:"name"`
-	Number int64 `json:"number"`
-	Pointer *string `json:"-"`   // we want to ignore this during JSON parsing (unmarshalling) or writing out json (marshalling)
+	Name    string  `json:"name"`
+	Number  int64   `json:"number"`
+	Pointer *string `json:"-"` // we want to ignore this during JSON parsing (unmarshalling) or writing out json (marshalling)
 }
 
 func main() {
@@ -33,7 +33,6 @@ func main() {
 
 	fmt.Println(temp)
 	fmt.Printf("%+v\n", temp)
-
 
 	// let's see the marshalling
 	oka := "oka"
