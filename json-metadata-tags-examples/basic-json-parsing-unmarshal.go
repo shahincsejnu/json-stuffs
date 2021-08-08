@@ -36,7 +36,7 @@ func main() {
 
 	err := json.Unmarshal(byt, &dum3)
 	if err != nil {
-		fmt.Println("An error occured dum3")
+		fmt.Println("An error occurred dum3")
 		os.Exit(1)
 	}
 	fmt.Println(dum3)
@@ -44,11 +44,12 @@ func main() {
 
 	err = json.Unmarshal(byt, &dum4)
 	if err != nil {
-		fmt.Println("An error occured dum4")
+		fmt.Println("An error occurred dum4")
 		os.Exit(1)
 	}
 	fmt.Println(dum4)
 	fmt.Printf("%+v\n", dum4)
 
 	// so we can see the output : in both dum3 and dum4 the field names is as like the struct field name (capital letter), so json tags custom field names used when converting to json (marshal)
+	// also, all fields got used in this unmarshalling
 }
