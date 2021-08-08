@@ -3,6 +3,8 @@
 This repository contains the stuffs related to JSON (or JSON in Golang to be specific).
 
 ## JSON
+<details>
+<summary>Click to expand</summary>
 
 - JavaScript Object Notation
 - Data representation format
@@ -12,7 +14,12 @@ This repository contains the stuffs related to JSON (or JSON in Golang to be spe
 - Integrates easily with most languages
 - It's extension is `.json`
 
+</details>
+  
+
 ## JSON (Data) Types
+<details>
+<summary>Click to expand</summary>
 
 - It supports `BASONN` types of data :
     - `B` : Booleans, Ex: true, false etc.
@@ -21,8 +28,11 @@ This repository contains the stuffs related to JSON (or JSON in Golang to be spe
     - `O` : Objects, Ex: {"key" : <value>}, {"age": 25} etc.
     - `N` : Numbers, Ex: 1, 2, 1.5, -30, -3.5, 1.2e10 etc any time of numbers
     - `N` : Null
+</details>  
     
 ## Syntax & Rules
+<details>
+<summary>Click to expand</summary>
 
 - Need to provide `,` after the `"key": <value>,` pair (in json object) except the last one
   - Ex:
@@ -139,15 +149,18 @@ This repository contains the stuffs related to JSON (or JSON in Golang to be spe
     ]`
     ```
   - See `main.go` to know how to use this json string, how to parse (Marshal and Unmarshal in Go) them to a json (from json string to json) etc.
-  
+</details>  
 
 ## JSON in Go
+<details>
+<summary>Click to expand</summary>
 
 - Go offers built-in support for JSON encoding and decoding, including to and from built-in and custom data types.
 - we can do `Marshal` and `Unmarshal` in Go for parsing JSON from and to struct etc.
 - see the examples of Marshal and Unmarshal
 - JSON Marshal in Go : Struct to JSON string
 - JSON Unmarshal in Go : JSON String to Struct
+</details>
 
 ## JSON metadata tag
 
@@ -156,9 +169,12 @@ This repository contains the stuffs related to JSON (or JSON in Golang to be spe
 
 
 # Resources 
+<details>
+<summary>Click to expand</summary>
 
 - [Learn JSON in 10 Minutes](https://www.youtube.com/watch?v=iiADhChRriM)
 - [Working with JSON in Go - Tutorial](https://www.youtube.com/watch?v=Osm5SCw6gPU) 
 - [Go by Example: JSON](https://gobyexample.com/json)
 - [Go JSON (Un)Marshalling, Missing Fields and Omitempty, JSON Metadata tag](https://build.vsupalov.com/go-json-omitempty/)
 - [Go JSON doc](https://pkg.go.dev/encoding/json)
+</details>
